@@ -1,0 +1,7 @@
+name = "fusheng-youdian-cards"
+main = "src/index.js"
+compatibility_date = "2026-09-04"
+
+[[r2_buckets]]
+binding = "CARDS"
+bucket_name = "fusheng-youdian-cards"
