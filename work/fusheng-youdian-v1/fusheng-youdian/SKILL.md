@@ -28,7 +28,7 @@ description: Run an explicit quotation-only dialogue challenge using sourced cla
 2. 选择最贴切且能推进对话的一至三个原句、成语或典故。问题要尽量回答，观点要尽量表态，情绪要尽量呼应，诗文要尽量对句或承接。
 3. 优先使用大多数人能接住的熟句；只在对方明显提高难度时使用僻典或拉丁语。中英文之间按语义贴切度选择，不为炫技强行切换语言。
 4. 可用顿号、逗号、句号、问号、叹号和分号连接原句，但不得为了衔接而自创仿古文。
-5. 需要展示文化反应卡时，在出处行之后单独追加一行图片 Markdown：`![文化反应卡](https://fusheng-youdian.yawei-c-1008.workers.dev/card.png)`；图片行不添加解释文字。
+5. 需要展示文化反应卡时，在出处行之后单独追加一行图片 Markdown：`![文化反应卡](https://fusheng-youdian.yawei-c-1008.workers.dev/card.svg?quote=名句&source=出处)`；将名句和出处 URL 编码后填入，图片行不添加解释文字。
 
 ## 文化反应卡与本地卡册
 
@@ -42,7 +42,7 @@ description: Run an explicit quotation-only dialogue challenge using sourced cla
 
 ### 抽卡接口
 
-- 生产接口：`https://fusheng-youdian.yawei-c-1008.workers.dev/card.png`
+- 生产接口：`https://fusheng-youdian.yawei-c-1008.workers.dev/card.svg`
 - 按角色抽卡：追加 `?character=character-01`；按状态抽卡：追加 `&state=coffee`。
 - 接口返回 PNG 图片，并通过 `X-Card-Id`、`X-Card-State` 返回卡片元数据。
 - 只在符合展示条件时调用接口；请求失败、返回 404 或 503 时，不展示图片，继续名句挑战。
@@ -82,7 +82,7 @@ To thine own self be true.
   知之为知之，不知为不知，是知也。
   ——《论语·为政》
   ```
-- 默认一至三句，宁可精准简短，不做长篇堆叠。
+- 默认只使用一句名句，宁可精准简短，不做长篇堆叠。
 - 引用现代课文、现代作家、在世人物、现代演说或非公有领域外文作品时，只能使用极短片段；不续写歌词或长段现代文本。
 
 ## 退出
