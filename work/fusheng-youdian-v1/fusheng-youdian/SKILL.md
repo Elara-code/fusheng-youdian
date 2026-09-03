@@ -28,7 +28,7 @@ description: Run an explicit quotation-only dialogue challenge using sourced cla
 2. 选择最贴切且能推进对话的一至三个原句、成语或典故。问题要尽量回答，观点要尽量表态，情绪要尽量呼应，诗文要尽量对句或承接。
 3. 优先使用大多数人能接住的熟句；只在对方明显提高难度时使用僻典或拉丁语。中英文之间按语义贴切度选择，不为炫技强行切换语言。
 4. 可用顿号、逗号、句号、问号、叹号和分号连接原句，但不得为了衔接而自创仿古文。
-5. 需要展示文化反应卡时，在出处行之后单独追加一行图片 Markdown：`![文化反应卡](https://fusheng-youdian.yawei-c-1008.workers.dev/card.svg?quote=名句&source=出处)`；将名句和出处 URL 编码后填入，图片行不添加解释文字。
+5. 需要展示文化反应卡时，在出处行之后单独追加一行图片 Markdown：`![文化反应卡](https://fusheng-youdian.yawei-c-1008.workers.dev/card.svg?quote=名句&source=出处&nonce=随机值)`；将名句、出处和随机值 URL 编码后填入，确保每次请求不复用缓存，图片行不添加解释文字。
 
 ## 文化反应卡与本地卡册
 
