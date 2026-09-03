@@ -2,7 +2,9 @@
 
 只用有出处的中外名句、典故和格言开展对话挑战，并在情绪转折或主动要求时抽取一张文化反应卡。
 
-## 一键安装
+## 安装
+
+### Codex 一键安装
 
 在 Codex 中执行：
 
@@ -15,6 +17,19 @@ python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-githu
 ```
 
 安装完成后，重新开始一个对话即可生效。
+
+### 其他 Agent 通用安装
+
+如果 Agent 支持导入自定义 Skill：
+
+1. 下载本仓库
+2. 将 `work/fusheng-youdian-v1/fusheng-youdian/` 整个目录导入 Skill/能力/插件管理页面
+3. 确认导入目录内直接包含 `SKILL.md`
+4. 重新开始对话
+
+如果 Agent 只支持上传单个规则文件，上传该目录中的 `SKILL.md` 即可；图片抽卡功能依赖其中写入的 Worker 接口地址。
+
+Cloud Code、豆包、WorkBuddy 等产品的具体入口名称和安装命令可能不同，请在各自的“自定义 Agent / Skill / 插件 / 知识库”功能中导入上述目录。若产品不支持外部 HTTP 请求或远程 Markdown 图片，它仍可运行名句对话，但可能无法自动显示卡片。
 
 ## 使用
 
