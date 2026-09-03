@@ -5,10 +5,36 @@
       "id": "character-01",
       "name": "古雅书生",
       "cards": [
+        {"id": "01-greeting", "state": "greeting"},
+        {"id": "01-black-suit", "state": "black-suit"},
         {"id": "01-coffee", "state": "coffee"},
-        {"id": "02-blue-jacket", "state": "blue-jacket"},
-        {"id": "03-basketball", "state": "basketball"},
-        {"id": "04-sunglasses", "state": "sunglasses"}
+        {"id": "01-blue-jacket", "state": "blue-jacket"},
+        {"id": "01-basketball", "state": "basketball"},
+        {"id": "01-sunglasses", "state": "sunglasses"}
+      ]
+    },
+    {
+      "id": "character-02",
+      "name": "角色二",
+      "cards": [
+        {"id": "02-bodycon-skirt", "state": "bodycon-skirt"},
+        {"id": "02-proud-hands-on-hips", "state": "proud-hands-on-hips"},
+        {"id": "02-purple-suit", "state": "purple-suit"},
+        {"id": "02-reading", "state": "reading"},
+        {"id": "02-running", "state": "running"},
+        {"id": "02-surprise", "state": "surprise"}
+      ]
+    },
+    {
+      "id": "character-03",
+      "name": "角色三",
+      "cards": [
+        {"id": "03-holding-book", "state": "holding-book"},
+        {"id": "03-smoking", "state": "smoking"},
+        {"id": "03-speechless", "state": "speechless"},
+        {"id": "03-surprise", "state": "surprise"},
+        {"id": "03-tennis", "state": "tennis"},
+        {"id": "03-trench-coat", "state": "trench-coat"}
       ]
     }
   ]
