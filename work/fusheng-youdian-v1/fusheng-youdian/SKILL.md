@@ -39,6 +39,14 @@ description: Run an explicit quotation-only dialogue challenge using sourced cla
 - 牌库与 Skill 逻辑分开管理；本地卡册与用户数据必须分开。公开 GitHub 仓库不得存放卡册、聊天内容、密钥或个人数据。牌片资产放在 Cloudflare R2 私有存储中，由服务端按抽卡请求一次返回一张，不在 Skill 中硬编凭证；若 R2 暂不可用，继续名句挑战并使用可靠的固定兜底。
 - 牌库清单或图片缺失时不得伪造卡片，只继续名句挑战并使用可靠的固定兜底。
 
+### 抽卡接口
+
+- 生产接口：`https://fusheng-youdian.yawei-c-1008.workers.dev/card`
+- 按角色抽卡：追加 `?character=character-01`；按状态抽卡：追加 `&state=coffee`。
+- 接口返回 PNG 图片，并通过 `X-Card-Id`、`X-Card-State` 返回卡片元数据。
+- 只在符合展示条件时调用接口；请求失败、返回 404 或 503 时，不展示图片，继续名句挑战。
+- 不直接访问 R2，不保存或输出任何 R2 凭证。
+
 ### 资产与仓库边界
 
 - 牌库源文件只包含原创图片、牌片清单和必要的版权与来源信息；图片上传至 Cloudflare R2 私有 bucket，Skill 只保留卡片编号、状态标签和取卡接口约定。
