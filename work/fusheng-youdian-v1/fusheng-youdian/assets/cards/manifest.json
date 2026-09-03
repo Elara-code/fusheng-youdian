@@ -5,36 +5,36 @@
       "id": "character-01",
       "name": "古雅书生",
       "cards": [
-        {"id": "01-greeting", "state": "greeting"},
-        {"id": "01-black-suit", "state": "black-suit"},
-        {"id": "01-coffee", "state": "coffee"},
-        {"id": "01-blue-jacket", "state": "blue-jacket"},
-        {"id": "01-basketball", "state": "basketball"},
-        {"id": "01-sunglasses", "state": "sunglasses"}
+        {"id": "01-greeting", "state": "greeting", "object": "character-01/01-greeting.png"},
+        {"id": "01-black-suit", "state": "black-suit", "object": "character-01/01-black-suit.png"},
+        {"id": "01-coffee", "state": "coffee", "object": "character-01/01-coffee.png"},
+        {"id": "01-blue-jacket", "state": "blue-jacket", "object": "character-01/01-blue-jacket.png"},
+        {"id": "01-basketball", "state": "basketball", "object": "character-01/01-basketball.png"},
+        {"id": "01-sunglasses", "state": "sunglasses", "object": "character-01/01-sunglasses.png"}
       ]
     },
     {
       "id": "character-02",
       "name": "角色二",
       "cards": [
-        {"id": "02-bodycon-skirt", "state": "bodycon-skirt"},
-        {"id": "02-proud-hands-on-hips", "state": "proud-hands-on-hips"},
-        {"id": "02-purple-suit", "state": "purple-suit"},
-        {"id": "02-reading", "state": "reading"},
-        {"id": "02-running", "state": "running"},
-        {"id": "02-surprise", "state": "surprise"}
+        {"id": "02-bodycon-skirt", "state": "bodycon-skirt", "object": "character-02/02-bodycon-skirt.png"},
+        {"id": "02-proud-hands-on-hips", "state": "proud-hands-on-hips", "object": "character-02/02-proud-hands-on-hips.png"},
+        {"id": "02-purple-suit", "state": "purple-suit", "object": "character-02/02-purple-suit.png"},
+        {"id": "02-reading", "state": "reading", "object": "character-02/02-reading.png"},
+        {"id": "02-running", "state": "running", "object": "character-02/02-running.png"},
+        {"id": "02-surprise", "state": "surprise", "object": "character-02/02-surprise.png"}
       ]
     },
     {
       "id": "character-03",
       "name": "角色三",
       "cards": [
-        {"id": "03-holding-book", "state": "holding-book"},
-        {"id": "03-smoking", "state": "smoking"},
-        {"id": "03-speechless", "state": "speechless"},
-        {"id": "03-surprise", "state": "surprise"},
-        {"id": "03-tennis", "state": "tennis"},
-        {"id": "03-trench-coat", "state": "trench-coat"}
+        {"id": "03-holding-book", "state": "holding-book", "object": "character-03/03-holding-book.png"},
+        {"id": "03-smoking", "state": "smoking", "object": "character-03/03-smoking.png"},
+        {"id": "03-speechless", "state": "speechless", "object": "character-03/03-speechless.png"},
+        {"id": "03-surprise", "state": "surprise", "object": "character-03/03-surprise.png"},
+        {"id": "03-tennis", "state": "tennis", "object": "character-03/03-tennis.png"},
+        {"id": "03-trench-coat", "state": "trench-coat", "object": "character-03/03-trench-coat.png"}
       ]
     }
   ]
